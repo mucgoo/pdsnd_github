@@ -160,7 +160,6 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df.columns:
-        grouped = df.groupby(['Birth Year']).agg('count')
     #histogram plot 
         plt.hist(df['Birth Year'], 20)
         plt.xlabel('Year of Birth')
