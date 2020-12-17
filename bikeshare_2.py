@@ -56,7 +56,7 @@ def load_data(city, month, day):
     months = dict(all=0, january=1, february=2, march=3, april=4, may=5, june=6, july=7, august=8, september=9, october=10, november=11, december=12)
     days = dict(all=7, monday=0, tuesday=1, wednesday=2, thursday=3, friday=4, saturday=5, sunday=6)
     #load df
-    df = pd.read_csv(city.replace(' ', '_') +'.csv')
+    df = pd.read_csv(CITY_DATA[city])
     #add month and day columns with int values
     df.insert(len(df.columns),'month',0)
     df.insert(len(df.columns),'day',0)
