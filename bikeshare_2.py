@@ -22,7 +22,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington)
     city = input('Which city? : ').lower()
-    while city not in ['chicago', 'new york city', 'washington']:
+    while city not in CITY_DATA:
         city = input('Please enter one off Chicago, New York City or Washington : ').lower()
     # get user input for month (all, january, february, ... , june)
     month = input('Which month?: ').lower()
